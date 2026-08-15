@@ -1,4 +1,3 @@
-
 package tp2.domain;
 
 public interface Strategy {

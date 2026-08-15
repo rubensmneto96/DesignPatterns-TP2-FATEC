@@ -1,24 +1,23 @@
 package tp2.domain;
 
-
 public enum StrategyType {
     PAPEL(1), TESOURA(2), PEDRA(3), LAGARTO(4), SPOCK(5);
     
-    private Integer id;
+    private final Integer id;
     
     StrategyType(Integer id) {
         this.id = id;
     }
     
     public Integer getId() {
-        return this.id;
+        return id;
     }
     
     public static StrategyType getById(Integer id) {
-        for(StrategyType t : StrategyType.values()) {
-            if (t.getId().equals(id)) return t;
+        for (StrategyType type : StrategyType.values()) {
+            if (type.getId().equals(id)) return type;
         }
-        throw new RuntimeException("ID: " + id);
+        throw new RuntimeException("ID invalido!: " + id);
     }
 
 }
