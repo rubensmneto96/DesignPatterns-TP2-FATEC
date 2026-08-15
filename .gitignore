@@ -17,7 +17,7 @@ bin/
 !**/src/test/**/bin/
 
 ### NetBeans ###
-/nbproject/
+nbproject/
 /nbbuild/
 /dist/
 /nbdist/
@@ -33,6 +33,6 @@ bin/
 
 .out/
 
-/build
+build/
 manifest.mf
 build.xml
